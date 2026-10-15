@@ -1,0 +1,43 @@
+version: 2
+registries:
+  wireserver:
+    type: npm-registry
+    url: "http://168.63.129.16/"
+  npmjs:
+    type: npm-registry
+    url: "https://registry.npmjs.org/"
+  imds:
+    type: npm-registry
+    url: "http://169.254.169.254/"
+  loopback:
+    type: npm-registry
+    url: "http://127.0.0.1:1/"
+  nxdomain:
+    type: npm-registry
+    url: "http://rc-nxdomain-1015.service.github.net/"
+updates:
+  - package-ecosystem: npm
+    directory: /t1-wireserver
+    schedule:
+      interval: monthly
+    registries: [wireserver]
+  - package-ecosystem: npm
+    directory: /t2-npmjs
+    schedule:
+      interval: monthly
+    registries: [npmjs]
+  - package-ecosystem: npm
+    directory: /t3-imds
+    schedule:
+      interval: monthly
+    registries: [imds]
+  - package-ecosystem: npm
+    directory: /t4-loopback
+    schedule:
+      interval: monthly
+    registries: [loopback]
+  - package-ecosystem: npm
+    directory: /t5-nxdomain
+    schedule:
+      interval: monthly
+    registries: [nxdomain]
