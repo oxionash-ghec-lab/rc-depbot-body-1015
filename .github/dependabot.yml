@@ -19,25 +19,25 @@ updates:
   - package-ecosystem: npm
     directory: /t1-wireserver
     schedule:
-      interval: monthly
+      interval: daily
     registries: [wireserver]
   - package-ecosystem: npm
     directory: /t2-npmjs
     schedule:
-      interval: monthly
+      interval: daily
     registries: [npmjs]
   - package-ecosystem: npm
     directory: /t3-imds
     schedule:
-      interval: monthly
+      interval: daily
     registries: [imds]
   - package-ecosystem: npm
     directory: /t4-loopback
     schedule:
-      interval: monthly
+      interval: daily
     registries: [loopback]
   - package-ecosystem: npm
     directory: /t5-nxdomain
     schedule:
-      interval: monthly
+      interval: daily
     registries: [nxdomain]
